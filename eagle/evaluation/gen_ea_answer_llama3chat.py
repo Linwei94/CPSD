@@ -323,10 +323,10 @@ if __name__ == "__main__":
     parser.add_argument(
         "--ea-model-path",
         type=str,
-        default="/home/lyh/weights/hf/eagle3/llama31chat/8B/",
+        default="/gcs/xcloud-shared/linweitao/huggingface_models/yuhuili-EAGLE3-LLaMA3.1-Instruct-8B",
         help="The path to the weights. This can be a local folder or a Hugging Face repo ID.",
     )
-    parser.add_argument("--base-model-path", type=str, default="/home/lyh/weights/hf/llama31chat/8B/",
+    parser.add_argument("--base-model-path", type=str, default="/gcs/xcloud-shared/linweitao/huggingface_models/meta-llama-Llama-3.1-8B-Instruct",
                         help="1")
     parser.add_argument(
         "--load-in-8bit", action="store_false", help="Use 8-bit quantization"
